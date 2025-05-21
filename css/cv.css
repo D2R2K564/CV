@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  justify-items: center;
+  align-content: center;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+}
+header>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 50px;
+  text-align: left;
+}
+header>div>h3 {
+  font-size: 30px;
+  text-align: left;
+}
+
+.imagen {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.imagen>img {
+  width: 90%;
+  object-fit: cover;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg,#2496c2,#7fbbd2,#acc5ce);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 20px;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(300deg,#285f80,#28c8e4);
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.5 ease;
+}
+
+a:hover{
+  color: black;
+
+}
+
+.seccion1{
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul{
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
