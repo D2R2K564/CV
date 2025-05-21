@@ -103,3 +103,6 @@ ul{
   flex-direction: column;
   gap: 10px;
 }
+h2{
+  color: turquoise;
+}
