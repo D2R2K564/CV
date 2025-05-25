@@ -71,7 +71,7 @@ header>div>h3 {
     background-position: 0% 50%;
   }
 }
-nav {
+nav>div {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -86,7 +86,9 @@ nav {
   top: 0;
 }
 
-
+.responsil{
+  display: none;
+}
 
 a {
   text-decoration: none;
@@ -121,16 +123,33 @@ p,h1,h2,h3,h4,h5,h6 {
   cursor: default;
 }
 
+button{
+  background: linear-gradient(300deg,#dbd0d0,#c49696,#dd5252);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-shadow: #967171;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  p {
-  }
-  header {
-    grid-template-columns: repeat(2, 1fr);
-  }
+header {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-movil {
+  display: none;
+}
+
+.responsil {
+  display: block;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
